@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
     Button buttonJob, buttonKinship, buttonLovers, buttonSchool, buttonFriends;
     ListView listaScuse;
 
-    String[] array = {"Stringa1", "Stringa2", "Stringa3", "Stringa4", "Stringa5", "Stringa6", "Stringa7"};
+    String[] arrayJob = {"Stringa1", "Stringa2", "Stringa3", "Stringa4", "Stringa5", "Stringa6", "Stringa7"};
 
-    String[] array1 = {"Stringa8", "Stringa9", "Stringa10", "Stringa11", "Stringa12", "Stringa13", "Stringa14"};
+    //String[] array1 = {"Stringa8", "Stringa9", "Stringa10", "Stringa11", "Stringa12", "Stringa13", "Stringa14"};
 
     ArrayAdapter<String> adapter;
 
@@ -40,24 +40,25 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        listaScuse = findViewById(R.id.listaScuse);
+      /*  listaScuse = findViewById(R.id.listaScuse);
         adapter = new ArrayAdapter<String>(this,R.layout.list_element,
                 R.id.textViewList, array );
+        */
+        //listaScuse.setAdapter(adapter);
 
-        listaScuse.setAdapter(adapter);
-
-        buttonKinship.setOnClickListener(new View.OnClickListener() {
+        buttonJob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                adapter.clear();
+                //adapter.clear();
+                //array = array1;
+                //adapter.addAll(array);
+                //adapter.notifyDataSetChanged();
 
-                array = array1;
-
-                adapter.addAll(array);
-
-
-                adapter.notifyDataSetChanged();
+                // genera view
+                // numero random
+                // arrayJob[random]
+                // view.display arrayJob[random]
 
 
             }
