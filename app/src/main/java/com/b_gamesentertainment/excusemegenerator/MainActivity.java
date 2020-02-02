@@ -49,9 +49,17 @@ public class MainActivity extends AppCompatActivity {
         buttonKinship.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                adapter.clear();
+
                 array = array1;
 
+                adapter.addAll(array);
+
+
                 adapter.notifyDataSetChanged();
+
+
             }
         });
 
