@@ -107,7 +107,7 @@
                 android:id="@+id/button26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="Button"
                 android:visibility="invisible" />
 
@@ -115,21 +115,21 @@
                 android:id="@+id/button25"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0"
                 android:text="Italian" />
 
             <Button
                 android:id="@+id/button24"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="0"
                 android:text="English" />
 
             <Button
                 android:id="@+id/button23"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="Button"
                 android:visibility="invisible" />
         </LinearLayout>
