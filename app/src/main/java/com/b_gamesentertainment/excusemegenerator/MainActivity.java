@@ -2,6 +2,7 @@ package com.b_gamesentertainment.excusemegenerator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -15,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
     ListView listaScuse;
 
     String[] array = {"Stringa1", "Stringa2", "Stringa3", "Stringa4", "Stringa5", "Stringa6", "Stringa7"};
+
+    String[] array1 = {"Stringa8", "Stringa9", "Stringa10", "Stringa11", "Stringa12", "Stringa13", "Stringa14"};
+
+    ArrayAdapter<String> adapter;
 
 
 
@@ -33,12 +38,22 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
         listaScuse = findViewById(R.id.listaScuse);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.list_element,
+        adapter = new ArrayAdapter<String>(this,R.layout.list_element,
                 R.id.textViewList, array );
 
         listaScuse.setAdapter(adapter);
 
+        buttonKinship.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                array = array1;
+
+                adapter.notifyDataSetChanged();
+            }
+        });
 
     }
 }
