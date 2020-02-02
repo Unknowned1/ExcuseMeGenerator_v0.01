@@ -6,14 +6,16 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
     Button buttonItalian, buttonEnglish;
     Button buttonJob, buttonKinship, buttonLovers, buttonSchool, buttonFriends;
-    ListView listaScuse;
+    TextView textViewScuse;
 
     String[] arrayJob = {"Stringa1", "Stringa2", "Stringa3", "Stringa4", "Stringa5", "Stringa6", "Stringa7"};
 
@@ -36,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
         buttonSchool = findViewById(R.id.buttonSchool);
         buttonLovers = findViewById(R.id.buttonLovers);
 
+        textViewScuse = findViewById(R.id.textViewScuse);
+        textViewScuse.setText(arrayJob[0]);
+
+
 
 
 
@@ -50,15 +56,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //adapter.clear();
-                //array = array1;
-                //adapter.addAll(array);
-                //adapter.notifyDataSetChanged();
+                Random random = new Random();
 
-                // genera view
-                // numero random
-                // arrayJob[random]
-                // view.display arrayJob[random]
+                int indice = random.nextInt(arrayJob.length +1 );
+
+                textViewScuse.setText(arrayJob[indice]);
 
 
             }
