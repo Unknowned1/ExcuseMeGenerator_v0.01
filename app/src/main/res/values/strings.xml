@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">ExcuseMeGenerator</string>
     <string name="hello_soldi">Hello Soldi!</string>
+    <string name="excuse_me_but">Excuse Me But ...</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="english">English</string>
+    <string name="italian">Italian</string>
+    <string name="button">Button</string>
+    <string name="job">Job</string>
+    <string name="kinship">kinship</string>
+    <string name="lovers">Lovers</string>
+    <string name="friends">Friends</string>
+    <string name="school">School</string>
+    <string name="language">Language :</string>
+
 </resources>
