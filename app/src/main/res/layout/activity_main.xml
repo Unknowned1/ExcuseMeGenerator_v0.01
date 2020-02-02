@@ -38,7 +38,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button20"
+            android:id="@+id/buttonJob"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -46,7 +46,7 @@
             android:textSize="8dp" />
 
         <Button
-            android:id="@+id/button19"
+            android:id="@+id/buttonKinship"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -54,7 +54,7 @@
             android:textSize="8dp" />
 
         <Button
-            android:id="@+id/button18"
+            android:id="@+id/buttonLovers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -62,7 +62,7 @@
             android:textSize="8dp" />
 
         <Button
-            android:id="@+id/button17"
+            android:id="@+id/buttonFriends"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -70,7 +70,7 @@
             android:textSize="8dp" />
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/buttonSchool"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -112,14 +112,14 @@
                 android:visibility="invisible" />
 
             <Button
-                android:id="@+id/button25"
+                android:id="@+id/buttonItalian"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="Italian" />
 
             <Button
-                android:id="@+id/button24"
+                android:id="@+id/buttonEnglish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -136,6 +136,7 @@
     </LinearLayout>
 
     <ListView
+        android:id="@+id/listaScuse"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/LanguageLayout" />
