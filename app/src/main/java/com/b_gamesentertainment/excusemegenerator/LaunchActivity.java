@@ -36,7 +36,7 @@ public class LaunchActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class );
+                Intent intent = new Intent(getApplicationContext(), MenuActivity.class );
                 startActivity(intent);
                 finish();
             }
