@@ -17,7 +17,17 @@ public class MainActivity extends AppCompatActivity {
     Button buttonJob, buttonKinship, buttonLovers, buttonSchool, buttonFriends;
     TextView textViewScuse;
 
-    String[] arrayJob = {"Stringa1", "Stringa2", "Stringa3", "Stringa4", "Stringa5", "Stringa6", "Stringa7"};
+    String[] arrayJob = {"Guarda scusami ma ho fatto tardi perchè alla mia vicina (nome)\n" +
+                            "si è guastata l'auto e mi ha chiesto se gentilmente potevo aiutarla,\n" +
+                            "nonostante fosse una questione di una mezz'oretta in realtà mi ha trattenuto\n" +
+                            "più del dovuto",
+
+            "Stringa2",
+            "Stringa3",
+            "Stringa4",
+            "Stringa5",
+            "Stringa6",
+            "Stringa7"};
     ArrayAdapter<String> adapter;
 
 
