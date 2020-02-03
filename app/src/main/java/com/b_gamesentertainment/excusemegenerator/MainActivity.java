@@ -9,7 +9,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonJob, buttonKinship, buttonLovers, buttonSchool, buttonFriends;
+    Button buttonExcuse, buttonBack;
     TextView textViewScuse;
 
     String[] arrayJob = {"Guarda scusami ma ho fatto tardi perchè alla mia vicina (nome)\n" +
@@ -32,22 +32,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonJob = findViewById(R.id.buttonJob);
-        buttonKinship = findViewById(R.id.buttonKinship);
-        buttonFriends = findViewById(R.id.buttonFriends);
-        buttonSchool = findViewById(R.id.buttonSchool);
-        buttonLovers = findViewById(R.id.buttonLovers);
+        buttonExcuse = findViewById(R.id.buttonExcuse);
 
         textViewScuse = findViewById(R.id.textViewScuse);
         textViewScuse.setText("ciao");
 
 
-        buttonJob.setOnClickListener(new View.OnClickListener() {
+        buttonExcuse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Random random = new Random();
-                int indice = random.nextInt(arrayJob.length );
+                int indice = random.nextInt(arrayJob.length);
                 textViewScuse.setText(arrayJob[indice]);
             }
         });

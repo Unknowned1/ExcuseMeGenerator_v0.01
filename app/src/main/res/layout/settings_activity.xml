@@ -9,16 +9,16 @@
         android:id="@+id/settings_vertical_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInVertical="true"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/language_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="0dp"
             android:gravity="center"
+            android:paddingTop="100dp"
             android:text="Choose Language"
             android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.AppCompat"
@@ -28,29 +28,31 @@
 
     </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_vertical_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/italian_language_button"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:layout_below="@id/settings_vertical_layout"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="Italian" />
 
-            <Button
-                android:id="@+id/italian_language_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:text="Italian" />
-
-            <Button
-                android:id="@+id/english_language_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:text="English" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/english_language_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="English" />
+    </LinearLayout>
 
 
 

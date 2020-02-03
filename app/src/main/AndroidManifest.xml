@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/vault_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".MenuActivity">
+        <activity android:name=".MenuActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SettingsActivity">
+        <activity android:name=".SettingsActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".LaunchActivity">
+        <activity android:name=".LaunchActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
