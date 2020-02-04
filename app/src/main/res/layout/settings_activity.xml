@@ -52,6 +52,15 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:text="English" />
+
+        <Button
+            android:id="@+id/back_button_in_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="Back" />
+
     </LinearLayout>
 
 

@@ -28,10 +28,7 @@ public class LaunchActivity extends AppCompatActivity {
         rotate.setRepeatCount(Animation.INFINITE);
         img_view.setAnimation(rotate);
 
-        /*
-        Intent intent = new Intent(this, MainActivity.class );
-        startActivity(intent);
-        */
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

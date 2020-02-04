@@ -28,6 +28,7 @@ public class Category extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Chiave",1);
                 startActivity(i);
+                finish();
             }
         });
 
@@ -38,6 +39,7 @@ public class Category extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Chiave",2);
                 startActivity(i);
+                finish();
             }
         });
 
@@ -48,6 +50,7 @@ public class Category extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Chiave",3);
                 startActivity(i);
+                finish();
             }
         });
 
@@ -58,6 +61,7 @@ public class Category extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Chiave",4);
                 startActivity(i);
+                finish();
             }
         });
 
@@ -68,6 +72,7 @@ public class Category extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Chiave",5);
                 startActivity(i);
+                finish();
             }
         });
     }

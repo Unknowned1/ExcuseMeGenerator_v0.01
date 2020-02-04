@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button buttonExcuse, buttonBack;
+    Button buttonExcuse, backButton;
     TextView textViewScuse;
 
     String[] arrayJob = {"Guarda scusami ma ho fatto tardi perchè alla mia vicina (nome)\n" +
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonExcuse = findViewById(R.id.buttonExcuse);
         textViewScuse = findViewById(R.id.textViewScuse);
+        backButton = findViewById(R.id.back_button_in_main);
         textViewScuse.setText("ciao");
 
         Intent i = getIntent();
@@ -61,6 +62,17 @@ public class MainActivity extends AppCompatActivity {
                 Random random = new Random();
                 int indice = random.nextInt(scelta.length);
                 textViewScuse.setText(scelta[indice]);
+            }
+        });
+
+
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), MenuActivity.class);
+                startActivity(i);
+                finish();
             }
         });
 
