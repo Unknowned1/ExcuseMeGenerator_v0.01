@@ -1,5 +1,6 @@
 package com.b_gamesentertainment.excusemegenerator;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
             "Stringa6",
             "Stringa7"};
 
+    String[] array2 = {"kinship"};
+    String[] scelta;
+
 
 
 
@@ -33,9 +37,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         buttonExcuse = findViewById(R.id.buttonExcuse);
-
         textViewScuse = findViewById(R.id.textViewScuse);
         textViewScuse.setText("ciao");
+
+        Intent i = getIntent();
+        int key = i.getIntExtra("Chiave", 1);
+        switch(key){
+            case 1: scelta = arrayJob; break;
+            case 2: scelta = array2; break;
+            default: scelta = arrayJob;
+        }
 
 
         buttonExcuse.setOnClickListener(new View.OnClickListener() {
@@ -43,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Random random = new Random();
-                int indice = random.nextInt(arrayJob.length);
-                textViewScuse.setText(arrayJob[indice]);
+                int indice = random.nextInt(scelta.length);
+                textViewScuse.setText(scelta[indice]);
             }
         });
 

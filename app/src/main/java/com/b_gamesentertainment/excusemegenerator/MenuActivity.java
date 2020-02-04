@@ -25,7 +25,7 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class );
+                Intent intent = new Intent(getApplicationContext(), Category.class );
                 startActivity(intent);
                 finish();
             }
