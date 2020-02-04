@@ -40,5 +40,35 @@ public class Category extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        loversButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                i.putExtra("Chiave",3);
+                startActivity(i);
+            }
+        });
+
+        friendsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                i.putExtra("Chiave",4);
+                startActivity(i);
+            }
+        });
+
+        schoolButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                i.putExtra("Chiave",5);
+                startActivity(i);
+            }
+        });
     }
 }

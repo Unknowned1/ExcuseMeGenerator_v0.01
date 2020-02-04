@@ -25,10 +25,12 @@ public class MainActivity extends AppCompatActivity {
             "Stringa6",
             "Stringa7"};
 
-    String[] array2 = {"kinship"};
+    String[] arrayKinship = {"kinship"};
+    String[] arrayLovers = {"Lovers"};
+    String[] arrayFriends = {"Friends"};
+    String[] arraySchool = {"School"};
+
     String[] scelta;
-
-
 
 
     @Override
@@ -44,7 +46,10 @@ public class MainActivity extends AppCompatActivity {
         int key = i.getIntExtra("Chiave", 1);
         switch(key){
             case 1: scelta = arrayJob; break;
-            case 2: scelta = array2; break;
+            case 2: scelta = arrayKinship; break;
+            case 3: scelta = arrayLovers; break;
+            case 4: scelta = arrayFriends; break;
+            case 5: scelta = arraySchool; break;
             default: scelta = arrayJob;
         }
 
