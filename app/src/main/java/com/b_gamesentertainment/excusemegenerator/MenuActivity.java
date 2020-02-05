@@ -21,11 +21,15 @@ public class MenuActivity extends AppCompatActivity {
         settingsButton = findViewById(R.id.settings_button);
         exitButton = findViewById(R.id.exit_button);
 
+        Intent i = getIntent();
+        final int keyLanguage = i.getIntExtra("Language", 1);
+
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(getApplicationContext(), Category.class );
+                intent.putExtra("Language", keyLanguage);
                 startActivity(intent);
                 finish();
             }

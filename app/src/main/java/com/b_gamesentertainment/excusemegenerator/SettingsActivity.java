@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    Button backButton;
+    Button backButton, italianLanguageButton, englishLanguageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +16,8 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.settings_activity);
 
         backButton = findViewById(R.id.back_button_in_settings);
+        italianLanguageButton = findViewById(R.id.italian_language_button);
+        englishLanguageButton = findViewById(R.id.english_language_button);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +28,27 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
+        italianLanguageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(getApplicationContext(), MenuActivity.class);
+                i.putExtra("Language",1);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        englishLanguageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(getApplicationContext(), MenuActivity.class);
+                i.putExtra("Language",2);
+                startActivity(i);
+                finish();
+            }
+        });
 
     }
 }

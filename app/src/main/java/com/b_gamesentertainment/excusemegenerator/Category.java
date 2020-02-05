@@ -21,12 +21,16 @@ public class Category extends AppCompatActivity {
         loversButton = findViewById(R.id.lovers_button);
         schoolButton = findViewById(R.id.school_button);
 
+        Intent i = getIntent();
+        final int keyLanguage = i.getIntExtra("Language", 1);
+
         jobButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Chiave",1);
+                i.putExtra("Language", keyLanguage);
                 startActivity(i);
                 finish();
             }
@@ -38,6 +42,7 @@ public class Category extends AppCompatActivity {
 
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Chiave",2);
+                i.putExtra("Language", keyLanguage);
                 startActivity(i);
                 finish();
             }
@@ -49,6 +54,7 @@ public class Category extends AppCompatActivity {
 
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Chiave",3);
+                i.putExtra("Language", keyLanguage);
                 startActivity(i);
                 finish();
             }
@@ -60,6 +66,7 @@ public class Category extends AppCompatActivity {
 
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Chiave",4);
+                i.putExtra("Language", keyLanguage);
                 startActivity(i);
                 finish();
             }
@@ -71,6 +78,7 @@ public class Category extends AppCompatActivity {
 
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Chiave",5);
+                i.putExtra("Language", keyLanguage);
                 startActivity(i);
                 finish();
             }
