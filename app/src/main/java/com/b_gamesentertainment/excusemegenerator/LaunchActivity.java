@@ -13,20 +13,20 @@ import static com.b_gamesentertainment.excusemegenerator.R.anim.rotate;
 public class LaunchActivity extends AppCompatActivity {
 
     ImageView img_view;
-    private static int TIME_OUT = 2000;
+    private static int TIME_OUT = 5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.launch_activity);
 
-        img_view = findViewById(R.id.startingImage);
+       /* img_view = findViewById(R.id.startingImage);
         RotateAnimation rotate = new RotateAnimation(0, 360,
                 Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF,
                 0.5f);
         rotate.setDuration(2000);
         rotate.setRepeatCount(Animation.INFINITE);
-        img_view.setAnimation(rotate);
+        img_view.setAnimation(rotate);*/
 
 
         new Handler().postDelayed(new Runnable() {

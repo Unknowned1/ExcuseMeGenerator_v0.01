@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BD89F7F9">
 
     <LinearLayout
         android:id="@+id/menu_linear_layout"
@@ -17,7 +19,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
+            android:background="@android:color/holo_blue_light"
             android:text="Avvia"
+            android:textColor="@android:color/white"
             android:textSize="22dp" />
 
         <Button
@@ -25,7 +29,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:background="@android:color/holo_blue_light"
             android:text="Impostazioni"
+            android:textColor="#FFFFFF"
             android:textSize="22dp" />
 
         <Button
@@ -33,7 +39,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:background="@android:color/holo_blue_light"
             android:text="Exit"
+            android:textColor="#FFFFFF"
             android:textSize="22dp" />
     </LinearLayout>
 </RelativeLayout>
