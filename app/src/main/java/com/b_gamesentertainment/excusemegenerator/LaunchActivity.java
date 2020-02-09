@@ -13,7 +13,7 @@ import static com.b_gamesentertainment.excusemegenerator.R.anim.rotate;
 public class LaunchActivity extends AppCompatActivity {
 
     ImageView img_view;
-    private static int TIME_OUT = 10000;
+    private static int TIME_OUT = 5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="3.0"
+        android:shadowDy="2.7"
+        android:shadowRadius="2.0"
+        android:text="SAVE your A$$"
+        android:textAllCaps="true"
+        android:textColor="#ff7700"
+        android:textColorHighlight="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/flamenco" />
 
     <LinearLayout
         android:id="@+id/menu_linear_layout"
@@ -19,7 +41,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
-            android:background="@drawable/rounded_shape"
             android:text="Avvia"
             android:textColor="@android:color/white"
             android:textSize="22dp" />
@@ -44,4 +65,14 @@
             android:textColor="#FFFFFF"
             android:textSize="22dp" />
     </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/duck_gif"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/duck" />
 </RelativeLayout>
