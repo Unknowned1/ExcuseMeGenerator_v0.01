@@ -15,6 +15,8 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
 
+        getSupportActionBar().hide();
+
         backButton = findViewById(R.id.back_button_in_settings);
         italianLanguageButton = findViewById(R.id.italian_language_button);
         englishLanguageButton = findViewById(R.id.english_language_button);

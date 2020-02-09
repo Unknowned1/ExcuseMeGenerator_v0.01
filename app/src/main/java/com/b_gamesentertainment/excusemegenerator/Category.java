@@ -15,6 +15,8 @@ public class Category extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.category_layout);
 
+        getSupportActionBar().hide();
+
         jobButton = findViewById(R.id.job_button);
         kinshipButton = findViewById(R.id.kinship_button);
         friendsButton = findViewById(R.id.friends_button);

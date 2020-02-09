@@ -22,6 +22,8 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_layout);
 
+        getSupportActionBar().hide();
+
         startButton = findViewById(R.id.start_button);
         settingsButton = findViewById(R.id.settings_button);
         exitButton = findViewById(R.id.exit_button);

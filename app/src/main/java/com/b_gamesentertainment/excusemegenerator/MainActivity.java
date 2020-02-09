@@ -161,6 +161,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().hide();
+
         buttonExcuse = findViewById(R.id.buttonExcuse);
         textViewScuse = findViewById(R.id.textViewScuse);
         backButton = findViewById(R.id.back_button_in_main);
