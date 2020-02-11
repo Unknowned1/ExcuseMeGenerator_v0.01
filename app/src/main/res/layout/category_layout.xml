@@ -4,82 +4,102 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    android:padding="50dp"
-    android:paddingTop="30dp">
+    android:paddingRight="40dp"
+    android:paddingLeft="40dp"
+    >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:shadowColor="#000000"
-        android:shadowDx="3.0"
-        android:shadowDy="2.7"
-        android:shadowRadius="2.0"
-        android:text="Choose a category"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="#ff7700"
-        android:textColorHighlight="@android:color/black"
-        android:textColorHint="@android:color/black"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:fontFamily="@font/flamenco" />
+
 
     <LinearLayout
         android:id="@+id/menu_linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="2.7"
+            android:shadowRadius="2.0"
+            android:text="Choose a category"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#ff7700"
+            android:textColorHighlight="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/flamenco" />
 
 
         <Button
             android:id="@+id/job_button"
-            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:background="@drawable/rounded_shape"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
             android:text="Job"
             android:textSize="22dp" />
 
         <Button
 
             android:id="@+id/kinship_button"
-            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:background="@drawable/rounded_shape"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
             android:text="Kinship"
             android:textSize="22dp" />
 
         <Button
             android:id="@+id/lovers_button"
-            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:background="@drawable/rounded_shape"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
             android:text="Lovers"
             android:textSize="22dp" />
 
         <Button
             android:id="@+id/school_button"
-            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:background="@drawable/rounded_shape"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
             android:layout_marginTop="20dp"
             android:text="School"
             android:textSize="22dp" />
 
         <Button
             android:id="@+id/friends_button"
-            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:background="@drawable/rounded_shape"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
             android:layout_marginTop="20dp"
             android:text="Friends"
             android:textSize="22dp" />
+
+        <Button
+            android:id="@+id/exit_button"
+            android:background="@drawable/rounded_shape_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:text="Back"
+            android:textSize="22dp"
+            />
     </LinearLayout>
 </RelativeLayout>

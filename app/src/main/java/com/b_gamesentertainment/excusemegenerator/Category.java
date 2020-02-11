@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class Category extends AppCompatActivity {
 
-    Button jobButton, kinshipButton, loversButton, friendsButton, schoolButton;
+    Button jobButton, kinshipButton, loversButton, friendsButton, schoolButton, exitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class Category extends AppCompatActivity {
         friendsButton = findViewById(R.id.friends_button);
         loversButton = findViewById(R.id.lovers_button);
         schoolButton = findViewById(R.id.school_button);
+        exitButton = findViewById(R.id.exit_button);
 
         Intent i = getIntent();
         final int keyLanguage = i.getIntExtra("Language", 1);
@@ -80,6 +81,17 @@ public class Category extends AppCompatActivity {
 
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
                 i.putExtra("Chiave",5);
+                i.putExtra("Language", keyLanguage);
+                startActivity(i);
+                finish();
+            }
+        });
+
+        exitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(getApplicationContext(), MenuActivity.class);
                 i.putExtra("Language", keyLanguage);
                 startActivity(i);
                 finish();
