@@ -15,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
 
     String[] arrayJob_English = {"\n" +
             "Sorry I'm late because my neighbor's car (name)\n" +
-                    "broke down and she/he asked me if I could kindly help her, despite it was a matter of half an hour actually she held me more than necessary",
+                    "broke down and she/he asked me if I could kindly help her, despite it was a matter of half an hour actually she held me more than necessary.",
 
             "Sorry but I can't hold back longer than I should because I have an appointment with the dentist / doctor etc...",
 
-            "I would really like to attend that meeting but I have another one scheduled, I promised a friend of mine that I would help him with his presentation to get him hired him in a company",
+            "I would really like to attend that meeting but I have another one scheduled, I promised a friend of mine that I would help him with his presentation to get him hired him in a company.",
 
             "I agree with what you say, but to tell the truth I'm organizing a surprise party for my mom.",
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
             "Love don't think badly, that is the cousin of (name), my friend, we were organizing an exit with him and to make him hurry we published the photo in such a way that he moved to reach us.",
 
-            "Love but that is the future wife of (name), we were waiting for her friends to go to the sex shop and buy a gift to put inside the wedding cake"
+            "Love but that is the future wife of (name), we were waiting for her friends to go to the sex shop and buy a gift to put inside the wedding cake."
     };
 
     String[] arrayLovers_English = {"\n"+
@@ -44,17 +44,44 @@ public class MainActivity extends AppCompatActivity {
 
             "I would never make love with (name)'s sister, my best friend.",
 
-            "",
+            "What's the problem to have a lesbian friend? I thought you had no problem about it, don't speak before you know.",
 
-            "",
+            "That's not true. Prove it.",
+
+            "Le ho chiesto perché avevo in mente di farti una grande sorpresa grazie ai suoi consigli e ai suoi amici, mi dispiace che tu abbia capito qualcos'altro."
     };
 
     String[] arrayFriends_English = {"\n"+
-            ""
+            "Guys, don't tell me anything but I only have 100 euros inside and the snack machines will not give me back the rest, I don't want to change them for a lot of coins.",
+
+            "Sorry guys but I go back to sleep.",
+
+            "Guys, I don't think I can come because I lent the car to (name), I think I'll be free from next week.",
+
+            "Sorry guys but the auto insurance has just expired.",
+
+            "Guys I think I will not be there tonight because tomorrow morning I have to go to (name)'s house and I have to wake up early."
     };
 
     String[] arraySchool_English = {"\n"+
-            ""
+            "I couldn't do it because I helped my father / mother finish some services.",
+
+            "I'm preparing the (name) test for college, so I'm currently working on that.",
+
+            "I will not be able to because I will go out before school tomorrow (or another day), I have an appointment with the doctor for a medical examination.",
+
+            "I won't be there because I'm helping (someone) with after-school work.",
+
+            "Honestly, this thing does not attract me much, I will do it because it is my duty, but give me more time to prepare it better.",
+
+            "Prof. I don't do my homework otherwise the others make fun of me.",
+
+            "Uncle(a) stay calm, I'll take your homework tomorrow.",
+
+            "I was late because the vending machine was blocked.",
+
+            "I was been unable to do my homework because yesterday I was at my grandmother's house, the latter suddenly flooded and we had to save her."
+
     };
 
 
@@ -133,13 +160,14 @@ public class MainActivity extends AppCompatActivity {
 
     String[] arraySchool = {
             "Non ho potuto farlo perchè ho aiutato mio padre/madre a finire alcuni servizi.",
-                            "Sto preparando il test di (nome) per l'università, quindi al momento mi sto\n" +
+
+            "Sto preparando il test di (nome) per l'università, quindi al momento mi sto\n" +
                             "dedicando a quello.",
 
             "Non potrò perchè uscirò prima di scuola domani (o altro giorno), ho appuntamento\n" +
                             "con il dottore per una visita medica\n",
 
-            "Non ci sarò perchè sto aiutando (qualcuno) a con il lavoro dopo scuola",
+            "Non ci sarò perchè sto aiutando (qualcuno) a con il lavoro dopo scuola.",
 
             "Sinceramente questa cosa non mi attira più di tanto, la farò perchè \n" +
                             "è mio dovere, ma mi dia del tempo in più per prepararla al meglio.\n",
