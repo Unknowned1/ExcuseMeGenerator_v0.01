@@ -3,8 +3,10 @@ package com.b_gamesentertainment.excusemegenerator;
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -23,6 +25,9 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.menu_layout);
 
         getSupportActionBar().hide();
+
+        final MediaPlayer mediaPlayer = MediaPlayer.create(MenuActivity.this, R.raw.launch_audio);
+        mediaPlayer.start();
 
         startButton = findViewById(R.id.start_button);
         settingsButton = findViewById(R.id.settings_button);
@@ -43,6 +48,7 @@ public class MenuActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), Category.class );
                 intent.putExtra("Language", keyLanguage);
                 startActivity(intent);
+                mediaPlayer.pause();
                 finish();
             }
         });
@@ -53,6 +59,7 @@ public class MenuActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), SettingsActivity.class );
                 startActivity(intent);
+                mediaPlayer.pause();
                 finish();
             }
         });
