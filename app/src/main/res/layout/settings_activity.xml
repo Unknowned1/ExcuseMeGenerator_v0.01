@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
 
     <LinearLayout
         android:id="@+id/settings_vertical_layout"
@@ -15,6 +15,18 @@
             android:id="@+id/language_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+
+            android:shadowColor="#000000"
+            android:shadowDx="3.0"
+            android:shadowDy="2.7"
+            android:shadowRadius="2.0"
+            android:textColor="#ff7700"
+            android:textColorHighlight="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/flamenco"
+
             android:layout_marginTop="30dp"
             android:layout_marginBottom="0dp"
             android:gravity="center"
@@ -22,9 +34,8 @@
             android:text="Choose Language"
             android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textStyle="bold"
             android:typeface="normal"
-            app:fontFamily="monospace" />
+             />
 
     </LinearLayout>
 
@@ -41,6 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/rounded_shape"
             android:paddingLeft="50dp"
             android:paddingRight="50dp"
             android:text="Italian" />
@@ -51,6 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_weight="1"
+            android:background="@drawable/rounded_shape"
             android:text="English" />
 
         <Button
@@ -59,10 +72,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
+            android:background="@drawable/rounded_shape_red"
             android:text="Back" />
 
     </LinearLayout>
-
 
 
 </RelativeLayout>
